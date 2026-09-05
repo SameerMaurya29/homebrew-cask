@@ -16,4 +16,12 @@ cask "oryn" do
   homepage "https://github.com/SameerMaurya29/Oryn-Browser"
 
   app "Oryn.app"
+
+  zap trash: [
+    "~/Library/Application Support/Oryn",
+    "~/Library/Caches/Oryn",
+    "~/Library/Logs/Oryn",
+    "~/Library/Preferences/com.oryn.browser.plist",
+    "~/Library/Saved Application State/com.oryn.browser.savedState",
+  ]
 end
